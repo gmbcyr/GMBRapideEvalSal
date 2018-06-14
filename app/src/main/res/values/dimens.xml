@@ -1,0 +1,53 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">5dp</dimen>
+    <dimen name="activity_vertical_margin">5dp</dimen>
+
+    <dimen name="button_h_n">60dp</dimen>
+    <dimen name="button_w_n">65dp</dimen>
+
+    <dimen name="button_h_n_land">55dp</dimen>
+    <dimen name="button_w_n_land">55dp</dimen>
+
+    <dimen name="button_c_h_n">40dp</dimen>
+    <dimen name="button_c_h_n_land">40dp</dimen>
+
+    <dimen name="saisie_h_n">50dp</dimen>
+    <dimen name="afficheur_h_n">180dp</dimen>
+
+    <dimen name="saisie_h_n_land">30dp</dimen>
+    <dimen name="afficheur_h_n_land">30dp</dimen>
+
+    <dimen name="sepa_margin_right">10dp</dimen>
+    <dimen name="sepa_margin_right_land">25dp</dimen>
+
+    <dimen name="summary_title">25dp</dimen>
+    <dimen name="details_title">25dp</dimen>
+
+    <dimen name="sub_title">20dp</dimen>
+
+    <dimen name="net_pay_summary">17dp</dimen>
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="navigation_drawer_width">240dp</dimen>
+
+    <dimen name="add_button_diameter">48dp</dimen>
+    <dimen name="elevation_low">1dp</dimen>
+    <dimen name="elevation_high">4dp</dimen>
+    <dimen name="add_button_margin">16dp</dimen>
+
+    <dimen name="ads_bottom_margin">5dp</dimen>
+
+    <dimen name="table_margin">10dp</dimen>
+
+    <dimen name="row_margin">7dp</dimen>
+
+    <dimen name="add_button_margin_custom_cal">5dp</dimen>
+    <dimen name="add_button_diameter_custom_cal">25dp</dimen>
+
+    <dimen name="cell_width">50dp</dimen>
+    <dimen name="cell_high">50dp</dimen>
+    <dimen name="grid_high">450dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+</resources>

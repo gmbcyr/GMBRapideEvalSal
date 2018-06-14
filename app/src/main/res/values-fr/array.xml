@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="listArray">
+        <item>De annuel vers heure</item>
+        <item>Du mois a l\'heure</item>
+        <item>De semaine a l\'heure</item>
+    </string-array>
+
+    <string-array name="listValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+
+
+
+    <string-array name="listMatStatus">
+        <item>Celibataire</item>
+        <item>Marie(e) paiement taxe conjoint</item>
+        <item>Marie(e) paiement de taxe inviduel</item>
+        <item>Chef de famille</item>
+    </string-array>
+
+    <string-array name="listMatStatusValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+
+
+    <string-array name="listPayFreq">
+        <item>Hebdomadaire</item>
+        <item>Bi mensuel</item>
+        <item>Mensuel</item>
+    </string-array>
+    <string-array name="listPayFreqValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+
+
+    <string-array name="listCmdTitle">
+        <item>Annuler=Dites \"stop\" ou \"annuler\"</item>
+        <item>Mode tranche horaire=Dites \"taux horaire\"</item>
+        <item>Mode tranche Annuel= Dites \"taux annuel\"</item>
+        <item>Entrer un nombre=Dites votre nombre. exple 25</item>
+        <item>Calculer=Dites \"evaluer\" ou \"calculer\"</item>
+        <item>Fermer l\'application=Dites \"exit\" ou \"fermer\"</item>
+    </string-array>
+
+    <string-array name="listCmdValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+
+
+</resources>

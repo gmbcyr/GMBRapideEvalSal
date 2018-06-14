@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="more_options">Plus...</string>
+    <string name="app_name">Assistant Salary Calculator</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Config</string>
+    <string name="go">Evaluer</string>
+    <string name="indication">Choisir votre mode,enter un montant,puis cliquer sur le bouton ci-dessous. Ou utiliser Plus... pour plus d\'options...</string>
+    <string name="cat_title">Base calcul options</string>
+    <string name="cat_name">catOption</string>
+    <string name="hour_per_day_name">hour_per_day</string>
+    <string name="hour_per_day_title">Heures de travail par jour</string>
+    <string name="hour_per_day_default">8</string>
+    <string name="day_per_week_name">day_per_week</string>
+    <string name="day_per_week_title">Jours par semaine</string>
+    <string name="day_per_week_default">5</string>
+    <string name="menu_settings">App Config</string>
+    <string name="app_settings">App Config</string>
+    <string name="month_or_year_name">month_or_year</string>
+    <string name="month_or_year_title">Annuel vers journalier</string>
+    <string name="month_or_year_default">true</string>
+    <string name="month_or_year_summary">When reverse, it\'s from year(check) or from month(uncheck)</string>
+    <string name="year_to_day_option_name">year_to_day</string>
+    <string name="year_to_day_option_title">Revenu annuel vers horaire</string>
+    <string name="year_to_day_option_default">1</string>
+    <string name="year_to_day_option_summary">Choisir un mode entre les differents modes presents</string>
+    <string name="title_activity_connection_failure">Echec de connexion</string>
+    <string name="applic_taxe_name">applic_taxe</string>
+    <string name="applic_taxe_title">Appliquer les taxes</string>
+    <string name="applic_taxe_summary">Cocher la case, les taxes seront calculer sur le revenu total annuel </string>
+    <string name="mat_status_name">mat_status</string>
+    <string name="mat_status_title">Choisir votre Statut</string>
+    <string name="mat_status_default">single</string>
+    <string name="mat_status_summary">Le montant de vos taxes est fonction de votre statut matrimonial</string>
+    <string name="max_hour_week_name">max_hour_week</string>
+    <string name="max_hour_week_title">Nombre max d\'heure en paie normale</string>
+    <string name="max_hour_week_default">40</string>
+    <string name="hour_sup_rate_name">hour_sup_rate</string>
+    <string name="hour_sup_rate_title">Taux Horaire des Heures sup</string>
+    <string name="hour_sup_rate_default">1.5</string>
+    <string name="hour_OT2_name">hour_OT2</string>
+    <string name="hour_OT2_title">Autres avantages estimes en heure de travail</string>
+    <string name="hour_OT2_default">0</string>
+    <string name="rate_OT2_name">rate_OT2</string>
+    <string name="rate_OT2_title">Taux horaire des autres avantages</string>
+    <string name="rate_OT2_default">0</string>
+    <string name="pay_frequency_name">pay_frequency</string>
+    <string name="pay_frequency_title">Choisir votre frequence de paiement</string>
+    <string name="pay_frequency_default">2</string>
+    <string name="pay_frequency_summary">Le resultat du calcul sera fonction de votre frequence de paiement</string>
+    <string name="retry">Reessayer</string>
+    <string name="noConnection">ECHEC DE CONNEXION,VEILLEZ VERIFIER VOTRE CONNEXION WIFI OU DATA.</string>
+    <string name="title_activity_affiche_result">Resultats de calcul</string>
+    <string name="inProgress">Traitement en cours....</string>
+
+    <string name="speech_prompt">Dites votre commande! ou dites \"annuler\" pour annuler</string>
+    <string name="speech_not_supported">Desole, votre appareil ne supporte pas la fonction vocale</string>
+    <string name="tap_on_mic">Taper le micro pour parler</string>
+
+    <string name="speech_util_name">speech_util</string>
+    <string name="speech_util_title">Utiliser la fonction vocal?</string>
+    <string name="speech_util_default">false</string>
+    <string name="speech_util_summary">Cocher cette case pour utiliser la fonction de commande vocale.</string>
+
+
+    <string name="onback_quit">QUITER L\'APPLICATION?</string>
+    <string name="onback_really_quit">Veillez confirmer votre choix</string>
+    <string name="onback_yes">OUI</string>
+    <string name="onback_no">NON</string>
+
+    <string name="amount">montant</string>
+    <string name="year_rate">Revenu annuel</string>
+    <string name="day_rate">Tranche horaire</string>
+    <string name="cat_list_cmd">List des commandes possibles</string>
+    <string name="cat_list_cmd_name">cat_list_cmd</string>
+
+    <string name="multilist_cmd_name">aff_list_cmd</string>
+    <string name="list_cmd_title">Commandes possibles</string>
+    <string name="list_cmd_summary">Liste des commandes que vous pouvez utiliser.</string>
+    <string name="private_policy">Infos privees</string>
+
+
+    <!--****************************************Text label for the result activity.****************************************-->
+
+    <string name="pay_summary">Bref apercu</string>
+    <string name="other_eval">Recalcul</string>
+    <string name="pay_type">Type de paie : </string>
+    <string name="pay_frequency">Frequence : </string>
+
+
+    <string name="pay_rate">Cout horaire : </string>
+    <string name="pay_net">Paie net : </string>
+    <string name="pay_weekly">Hebdo</string>
+    <string name="pay_two_week">Bi-mensuel</string>
+    <string name="pay_monthly">Mensuel</string>
+
+    <string name="pay_type_hour">Horaire</string>
+    <string name="pay_type_year">Salarie</string>
+    <string name="general_infos">Infos Generales</string>
+    <string name="freq_pay">Frequence</string>
+
+
+
+
+    <string name="gros_income">Gros Revenu annuel</string>
+    <string name="tax_wage">Montant Taxable</string>
+    <string name="net_pay_label">Paie net </string>
+    <string name="earning">Gains</string>
+
+
+    <string name="hours">Heures</string>
+    <string name="regular_pay">Paie standard</string>
+    <string name="overtime_pay">Paie heures sup.</string>
+    <string name="other_benefits">Autres benefices</string>
+    <string name="deductions">Deductions</string>
+
+    <string name="standard_deduction">Deductions standards</string>
+    <string name="personal_deduction">Deductions perso.</string>
+    <string name="other_deduction">Autres deductions</string>
+    <string name="taxes">Taxes</string>
+
+
+
+    <string name="show_compare_title">Afficher en mode comparaison?</string>
+    <string name="compare_summary">Si cocher, les resultats seront afficher en mode comparaison entre l ancien lois et la nouvelle lois de tax.</string>
+
+    <string name="federal_taxe">Taxes federales</string>
+    <string name="social_secu_taxe">Taxes Securite social</string>
+    <string name="employe_medicare">Assurance sante</string>
+    <string name="other_taxes">Autres Taxes</string>
+    <string name="commande_unknown">Desole, impossible de saisir votre commande. Bien vouloir saisir votre commande</string>
+    <string name="no_commande_in_speech">Desole, impossible de saisir votre commande</string>
+
+    <string name="invitation_message">Voudrais partarger cet App </string>
+    <string name="invitation_cta">Call to action</string>
+    <string name="invitation_title">Invitation </string>
+    <string name="invite_menu_label">Invite</string>
+
+    <string name="nbre_dependant_title">Dependants</string>
+    <string name="nbre_dependant_summary">Entrer le nombre de dependants: enfants ou personnes sous votre responsabilite.</string>
+
+    <string-array name="freq_title">
+        <item>Paie Horaire</item>
+        <item>Paie Hebdo</item>
+        <item>Paie Bi-Hebdo</item>
+        <item>Paie Mensuelle</item>
+        <item>Paie Annuelle</item>
+    </string-array>
+
+
+
+
+    <string name="mode">Choisir le mode</string>
+
+
+
+
+
+    <string-array name="freq_values">
+        <item>@string/call_method_from_h</item>
+        <item>@string/call_method_from_w</item>
+        <item>@string/call_method_from_2w</item>
+        <item>@string/call_method_from_m</item>
+        <item>@string/call_method_from_y</item>
+    </string-array>
+
+
+
+
+
+
+    <string-array name="cmd_list_exit">
+        <item>exit</item>
+        <item>quitter</item>
+        <item>fermer</item>
+        <item>fermer app</item>
+        <item>exit aplication</item>
+        <item>exit app</item>
+        <item>close aplication</item>
+        <item>close app</item>
+    </string-array>
+
+
+
+
+    <string-array name="cmd_list_cancel">
+        <item>annuler</item>
+        <item>stop</item>
+        <item>annuler prompt</item>
+    </string-array>
+
+
+    <string-array name="cmd_list_evalue">
+        <item>evaluer</item>
+        <item>calculer</item>
+        <item>resultats</item>
+        <item>launch</item>
+        <item>aller</item>
+    </string-array>
+
+
+    <string-array name="cmd_list_yearly">
+        <item>annuel</item>
+        <item>cout annuelle</item>
+        <item>annuelle</item>
+    </string-array>
+
+
+    <string-array name="cmd_list_hourly">
+        <item>par heure</item>
+        <item>cout horaire</item>
+        <item>heure</item>
+    </string-array>
+
+    <string-array name="cmd_list_weekly">
+        <item>hebdomadaire</item>
+        <item>cout hebdomadaire</item>
+        <item>semaine</item>
+        <item>hebdo</item>
+        <item>cout hebdo</item>
+    </string-array>
+
+    <string-array name="cmd_list_semiweek">
+        <item>bi mensuel</item>
+        <item>semi mensuel</item>
+        <item>quinzaine</item>
+    </string-array>
+
+    <string-array name="cmd_list_monthly">
+        <item>mensuel</item>
+        <item>cout mensuel</item>
+        <item>mois</item>
+    </string-array>
+    <string name="tab_calcul">Calcul</string>
+    <string name="tab_histo">Historique</string>
+    <string name="tab_result">Resultats</string>
+    <string name="tab_saves">Enregistres</string>
+    <string name="save_result_lbl">Operation terminee ! Sauvegarder ?</string>
+    <string name="save_result">Sauvegarder</string>
+    <string name="completed">Action complete</string>
+    <string name="failed">Echec d\'operation</string>
+    <string name="tab_settings">Configurations</string>
+    <string name="empty_list">Pas encore d\'historique</string>
+    <string name="total_annual">Total annuel</string>
+    <string name="old_tax_rules">Anciene lois de taxe</string>
+    <string name="new_tax_cut">Nouvelle lois de taxe</string>
+
+
+
+</resources>

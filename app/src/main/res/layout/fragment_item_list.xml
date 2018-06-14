@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    tools:context="com.gmb.gmbrapideevalsal.HistoriqueFragment"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_gravity="center_horizontal|center_vertical">
+
+
+    <LinearLayout
+        android:id="@+id/lyt_title"
+        android:layout_width="match_parent"
+        android:layout_weight="0.2"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="2dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <TextView
+            style="@style/AppTheme.Caption"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:text="date"
+            android:textColor="@color/greySecondary"
+            tools:text="Filter" />
+
+        <TextView
+            style="@style/AppTheme.Body1"
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            android:layout_height="wrap_content"
+            android:text="Rate"
+            android:textColor="@color/greyDisabled" />
+        <TextView
+            style="@style/AppTheme.Body1"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:text="Gross"
+            android:textColor="@color/greyDisabled" />
+
+        <TextView
+            style="@style/AppTheme.Body1"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:text="Actual Net"
+            android:textColor="@color/greyDisabled" />
+        <TextView
+
+            style="@style/AppTheme.Body1"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:text="Old Net"
+            android:textColor="@color/greyDisabled" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:name="com.gmb.gmbrapideevalsal.HistoriqueFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        app:layoutManager="LinearLayoutManager"
+        tools:listitem="@layout/fragment_item"
+        android:background="@color/bg_light_white"
+
+        android:layout_below="@+id/lyt_title"/>
+
+
+
+
+
+
+</RelativeLayout>
+

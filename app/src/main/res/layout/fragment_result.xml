@@ -1,0 +1,825 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.gmb.gmbrapideevalsal.AfficheResult"
+    android:typeface="serif"
+    android:fontFamily="sans-serif-thin"
+    android:background="@color/bg_light_white"
+    android:id="@+id/content">
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/lyt_content_pub"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/fixedHeader"
+
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutSummary"
+            android:background="@drawable/fixed_top_shape"
+            android:padding="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pay_summary"
+                android:id="@+id/summaryTitle"
+
+                android:hint="Pay Summary"
+
+                style="@style/summary_title"
+                android:textSize="30sp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/txtToSpeak"
+                android:visibility="gone"
+            />
+
+
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/other_eval"
+                android:id="@+id/other_eval"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                style="@style/button_new_eval"
+                android:background="@drawable/button_style"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pay Type: hourly"
+                android:id="@+id/payType"
+                android:layout_below="@id/summaryTitle"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                style="@style/text_line_val"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pay Frequency:Weekly"
+                android:id="@+id/payFreq"
+                android:layout_below="@+id/summaryTitle"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                style="@style/text_line_val"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pay rate : $10"
+                android:id="@+id/payRate"
+                android:layout_below="@+id/payType"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                style="@style/text_line_val"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Net Pay : $1,600"
+                android:id="@+id/payNet"
+                android:layout_below="@+id/payFreq"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                style="@style/text_line_val"/>
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+        <View
+            android:layout_below="@id/layoutSummary"
+            android:layout_width="fill_parent"
+            android:layout_height="5dip"
+            android:background="@drawable/drop_shadow"
+            >
+        </View>
+
+        </RelativeLayout>
+
+
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/fixedHeader"
+        android:layout_centerInParent="true"
+
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="1dp"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="1dp"
+        android:layout_marginLeft="2dp"
+        >
+
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/summaryview"
+        android:contentDescription="Pay Summary">
+
+
+
+
+
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/customshape"
+            android:layout_marginTop="1dp">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/general_infos"
+                    android:id="@+id/summaryDetails"
+                    android:textSize="@dimen/sub_title"
+                    android:layout_column="0"
+                    style="@style/section_title"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Frequency(weekly)"
+
+                    android:id="@+id/frequencyTab"
+                    android:layout_column="3"
+                    style="@style/text_line_val"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Total per Year"
+                    android:id="@+id/totalPerYear"
+                    android:layout_column="7"
+                    style="@style/text_line_val"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"></TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/line1_bg"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gros_income"
+                    android:id="@+id/grossIncomeTab"
+                    android:layout_column="0"
+                    style="@style/text_line_val"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="gross Freq value"
+                    android:id="@+id/grossFreqVal"
+                    android:layout_column="3"
+                    style="@style/text_line_val"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gross in year"
+                    android:id="@+id/grossInYear"
+                    android:layout_column="7"
+
+                    style="@style/text_line_val"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/line2_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deductions"
+                    android:id="@+id/deductionTab"
+                    android:layout_column="0"
+                    style="@style/text_line_val"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deduction Freq value"
+                    android:id="@+id/deductionFreqVal"
+                    android:layout_column="3"
+                    style="@style/text_line_val"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deduction in year"
+                    android:id="@+id/deductionInYear"
+                    android:layout_column="7"
+                    style="@style/text_line_val"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/line1_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tax_wage"
+                    android:id="@+id/taxableWageTab"
+                    android:layout_column="0"
+                    style="@style/text_line_val"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Taxable Freq value"
+                    android:id="@+id/taxableFreqVal"
+                    android:layout_column="3"
+                    style="@style/text_line_val"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Taxable in year"
+                    android:id="@+id/TaxableInYearVal"
+                    android:layout_column="7"
+                    style="@style/text_line_val"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/line2_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Taxes"
+                    android:id="@+id/TaxeTab"
+                    android:layout_column="0"
+                    style="@style/text_line_val"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Taxe Freq value"
+                    android:id="@+id/taxeFreqVal"
+                    android:layout_column="3"
+                    style="@style/text_line_val"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Taxe in year"
+                    android:id="@+id/taxeInYear"
+                    android:layout_column="7"
+                    style="@style/text_line_val"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/line1_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/net_pay_label"
+                    android:id="@+id/netPayTab"
+                    android:layout_column="0"
+                    style="@style/text_line_val"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="net Pay Freq value"
+                    android:id="@+id/netPayFreqVal"
+                    android:layout_column="3"
+                    style="@style/text_line_val"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="net pay in year"
+                    android:id="@+id/netPayInYear"
+                    android:layout_column="7"
+                    style="@style/text_line_val"/>
+            </TableRow>
+        </TableLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/summaryview"
+        android:contentDescription="Pay Summary"
+        android:id="@+id/relativeLayout">
+
+        <!--TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:labelFor="@+id/relativeLayout"
+            android:id="@+id/detailsTitle"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="Full Details"
+            android:textAlignment="textStart"
+            android:textSize="@dimen/details_title" /-->
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tabEarning"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/customshape"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/earning"
+                    android:id="@+id/earnings"
+                    android:textSize="@dimen/sub_title"
+                    android:layout_column="0"
+                    style="@style/section_title"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"></TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hours"
+                    android:id="@+id/hours"
+                    android:layout_column="5"
+                    style="@style/text_line_title"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/amount"
+                    android:id="@+id/textView"
+                    android:layout_column="7"
+                    style="@style/text_line_title"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/line1_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/regular_pay"
+                    android:id="@+id/textView2"
+                    android:layout_column="0"
+                    style="@style/text_line_val"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cell_value"
+                    android:text="Regular Pay Hours Val"
+                    android:id="@+id/regular_pay_hours"
+                    android:layout_column="5"
+                    style="@style/text_line_val"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cell_value"
+                    android:text="Regular Pay Amount"
+                    android:id="@+id/regular_pay_amount"
+                    android:layout_column="7"
+                    style="@style/text_line_val"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/line2_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/overtime_pay"
+                    android:id="@+id/textView3"
+                    android:layout_column="0"
+                    style="@style/text_line_val"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cell_value"
+                    android:text="Overtime Pay Value"
+                    android:id="@+id/overtime_pay_hours"
+                    android:layout_column="5"
+                    style="@style/text_line_val"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cell_value"
+                    android:text="Overtime Pay Amount"
+                    android:id="@+id/Overtime_pay_amount"
+                    android:layout_column="7"
+                    style="@style/text_line_val"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/line1_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/other_benefits"
+                    android:id="@+id/textView4"
+                    android:layout_column="0"
+                    style="@style/text_line_val"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cell_value"
+                    android:text="Other Pay Hours Val"
+                    android:id="@+id/other_pay_hours"
+                    android:layout_column="5"
+                    style="@style/text_line_val"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cell_value"
+                    android:text="Others Pay Amount"
+                    android:id="@+id/others_pay_amount"
+                    android:layout_column="7"
+                    style="@style/text_line_val"/>
+            </TableRow>
+        </TableLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tabDeduction"
+            android:layout_below="@+id/tabEarning"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/customshape"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/deductions"
+                    android:id="@+id/DeductionTitle"
+                    android:textSize="@dimen/sub_title"
+                    android:layout_column="0"
+                    style="@style/section_title"/>
+            </TableRow>
+
+
+
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/line1_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/standard_deduction"
+                    android:id="@+id/standardDeduction"
+                    android:layout_column="0"
+                    style="@style/text_line_val"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Standard Deduction Val"
+                    android:id="@+id/standard_deduction_Val"
+                    android:layout_column="4"
+                    style="@style/text_line_val"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/line2_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/personal_deduction"
+                    android:id="@+id/PersonnalDeduc"
+                    android:layout_column="0"
+                    style="@style/text_line_val"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Personnal Deduction Val"
+                    android:id="@+id/Personnal_deduction_Val"
+                    android:layout_column="4"
+                    style="@style/text_line_val"/>
+
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/line1_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/other_deduction"
+                    android:id="@+id/otherDeduc"
+                    android:layout_column="0"
+                    style="@style/text_line_val"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other Deductions Val"
+                    android:id="@+id/other_deduction_Val"
+                    android:layout_column="4"
+                    style="@style/text_line_val"/>
+
+
+            </TableRow>
+
+
+        </TableLayout>
+
+
+
+
+
+
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tabTaxes"
+            android:layout_below="@id/tabDeduction"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/customshape"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sub_title"
+                    android:text="@string/taxes"
+                    android:id="@+id/TaxesTitle"
+                    android:layout_column="0"
+                    style="@style/section_title"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"></TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+            </TableRow>
+
+
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/line1_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/federal_taxe"
+                    android:id="@+id/federalTaxes"
+                    android:layout_column="0"
+                    style="@style/text_line_val"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Federal Taxes Val"
+                    android:id="@+id/federalTaxesVal"
+                    android:layout_column="4"
+                    style="@style/text_line_val"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/line2_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/social_secu_taxe"
+                    android:id="@+id/social_security_taxes"
+                    android:layout_column="0"
+                    style="@style/text_line_val"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Social Security Taxes Val"
+                    android:id="@+id/social_security_taxes_val"
+                    android:layout_column="4"
+                    style="@style/text_line_val"/>
+
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/line1_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/employe_medicare"
+                    android:id="@+id/EmployeeMedic"
+                    android:layout_column="0"
+                    style="@style/text_line_val"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Employee Medicare Val"
+                    android:id="@+id/employee_medicare_Val"
+                    android:layout_column="4"
+                    style="@style/text_line_val"/>
+
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/line2_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/other_taxes"
+                    android:id="@+id/othersTaxes"
+                    android:layout_column="0"
+                    style="@style/text_line_val"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Others Taxes Val"
+                    android:id="@+id/others_taxes_Val"
+                    android:layout_column="4"
+                    style="@style/text_line_val"/>
+
+
+            </TableRow>
+
+
+        </TableLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="listArray">
+        <item>De un año a otro</item>
+        <item>De mes a hora</item>
+        <item>De semana a hora</item>
+    </string-array>
+    <string-array name="listValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="listMatStatus">
+        <item>Ingreso tributable único</item>
+        <item>Casado que archiva conjuntamente</item>
+        <item>Casado por separado </item>
+        <item>Jefe de hogar </item>
+    </string-array>
+    <string-array name="listMatStatusValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+
+    <string-array name="listPayFreq">
+        <item>@string/pay_weekly</item>
+        <item>@string/pay_two_week</item>
+        <item>@string/pay_monthly</item>
+    </string-array>
+    <string-array name="listPayFreqValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+
+    <string-array name="listCmdTitle">
+        <item>Cancelar = decir \"detener\" o \"cancelar\"</item>
+        <item>Elija el modo horario = decir \"Tarifa por hora\"</item>
+        <item>Elegir modo Anual = decir \"Tarifa anual\"</item>
+        <item>Enter an amount=say an Amount. como 25</item>
+        <item>Evaluar = decir\"Evaluar\" O \"tener resultados\"</item>
+        <item>Salir de la aplicación = decir \"salida\" o \"cerca\"</item>
+    </string-array>
+    <string-array name="listCmdValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+</resources>

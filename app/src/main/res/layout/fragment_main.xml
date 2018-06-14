@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gmb.gmbrapideevalsal.MainFragment">
+
+    <ScrollView
+        android:id="@+id/scrollContentField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/lyt_content_pub">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:padding="7dp"
+            android:background="@drawable/calc_info_bg"
+            android:id="@+id/contentField"
+            >
+
+            <TextView
+                android:id="@+id/indication"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/indication"
+                android:inputType="textMultiLine"
+                style="@style/ButtonEval"
+                android:alpha="0.85"
+                android:layout_marginLeft="@dimen/sepa_margin_right"
+                android:layout_marginRight="@dimen/sepa_margin_right"/>
+
+
+
+
+            <Spinner
+                android:id="@+id/cmb_type_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/freq_title"
+                android:spinnerMode="dropdown"
+
+
+
+                android:layout_marginTop="22dp"
+                android:layout_below="@id/indication"
+                android:layout_centerInParent="true">
+
+            </Spinner>
+
+
+
+            <RelativeLayout
+                android:id="@+id/lyt_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_below="@id/cmb_type_pay"
+                android:layout_alignLeft="@id/cmb_type_pay"
+                android:layout_alignStart="@id/cmb_type_pay"
+                android:layout_alignEnd="@+id/cmb_type_pay"
+                android:layout_alignRight="@+id/cmb_type_pay"
+                android:layout_centerHorizontal="true">
+
+                <EditText
+                    android:id="@+id/amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/saisie_h_n"
+
+                    android:layout_centerHorizontal="true"
+                    android:hint="@string/amount"
+                    android:inputType="numberDecimal"
+
+                    android:layout_marginTop="7dp"
+                    style="@style/ButtonEval"/>
+
+
+
+                <ImageButton
+                    android:id="@+id/btnSpeak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:src="@drawable/icomic2"
+                    android:visibility="visible"
+                    android:layout_toRightOf="@+id/amount"
+                    android:layout_marginTop="5dp"
+
+
+                    />
+
+            </RelativeLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/getSpeak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:visibility="gone"/>
+
+
+            <Button
+                android:id="@+id/go"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lyt_amount"
+                android:layout_alignLeft="@+id/lyt_amount"
+                android:background="@drawable/button_style"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="7dp"
+                android:paddingBottom="15dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+
+
+                style="@style/ButtonEval"
+                android:text="@string/go" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/more"
+                android:text="@string/more_options"
+                android:layout_below="@+id/go"
+                android:layout_alignLeft="@+id/go"
+                android:layout_alignRight="@+id/go"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                style="@style/ButtonEval"
+                android:textSize="15sp"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/contentProgressBar">
+
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:indeterminate="true"/>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inProgress"
+            android:text="@string/inProgress"
+            android:layout_below="@+id/progressBar"
+            android:layout_toRightOf="@+id/progressBar"
+            android:layout_toEndOf="@+id/progressBar"
+            android:layout_marginTop="66dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/cat_title"
+        android:key="@string/cat_name">
+
+        <EditTextPreference
+            android:key="@string/hour_per_day_name"
+            android:title="@string/hour_per_day_title"
+            android:defaultValue="@string/hour_per_day_default"
+            android:inputType="numberDecimal"/>
+
+        <EditTextPreference
+            android:key="@string/day_per_week_name"
+            android:title="@string/day_per_week_title"
+            android:defaultValue="@string/day_per_week_default"
+            android:inputType="numberDecimal"/>
+
+        <!--CheckBoxPreference
+            android:key="@string/month_or_year_name"
+            android:summary="@string/month_or_year_summary"
+            android:title="@string/month_or_year_title"
+            android:defaultValue="@string/month_or_year_default"/>
+
+        <ListPreference
+            android:title="@string/year_to_day_option_title"
+            android:summary="@string/year_to_day_option_summary"
+            android:key="@string/year_to_day_option_name"
+            android:defaultValue="1"
+            android:entries="@array/listArray"
+            android:entryValues="@array/listValues" /-->
+
+
+
+
+        <ListPreference
+            android:title="@string/mat_status_title"
+            android:summary="@string/mat_status_summary"
+            android:key="@string/mat_status_name"
+            android:defaultValue="1"
+            android:entries="@array/listMatStatus"
+            android:entryValues="@array/listMatStatusValues" />
+
+
+        <EditTextPreference
+            android:key="@string/max_hour_week_name"
+            android:title="@string/max_hour_week_title"
+            android:defaultValue="@string/max_hour_week_default"
+            android:inputType="numberDecimal"/>
+
+        <EditTextPreference
+            android:key="@string/hour_sup_rate_name"
+            android:title="@string/hour_sup_rate_title"
+            android:defaultValue="@string/hour_sup_rate_default"
+            android:inputType="numberDecimal"/>
+
+
+        <EditTextPreference
+            android:key="@string/hour_OT2_name"
+            android:title="@string/hour_OT2_title"
+            android:defaultValue="@string/hour_OT2_default"
+            android:inputType="numberDecimal"/>
+
+        <EditTextPreference
+            android:key="@string/rate_OT2_name"
+            android:title="@string/rate_OT2_title"
+            android:defaultValue="@string/rate_OT2_default"
+            android:inputType="numberDecimal"/>
+
+        <EditTextPreference
+            android:key="@string/nbre_dependant"
+            android:title="@string/nbre_dependant_title"
+            android:summary="@string/nbre_dependant_summary"
+            android:defaultValue="1"
+            android:inputType="numberDecimal"/>
+
+
+        <ListPreference
+            android:title="@string/pay_frequency_title"
+            android:summary="@string/pay_frequency_summary"
+            android:key="@string/pay_frequency_name"
+            android:defaultValue="@string/pay_frequency_default"
+            android:entries="@array/listPayFreq"
+            android:entryValues="@array/listPayFreqValues" />
+
+
+        <SwitchPreference
+            android:key="@string/speech_util_name"
+            android:summary="@string/speech_util_summary"
+            android:title="@string/speech_util_title"
+            android:defaultValue="@string/speech_util_default"/>
+
+
+        <SwitchPreference
+            android:key="@string/show_compare_mode"
+            android:summary="@string/compare_summary"
+            android:title="@string/show_compare_title"
+            android:defaultValue="@string/show_compare_default"
+            android:visibility="gone"/>
+
+
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/cat_list_cmd"
+        android:key="@string/cat_list_cmd_name">
+
+        <MultiSelectListPreference
+            android:title="@string/list_cmd_title"
+            android:dialogTitle="@string/list_cmd_title"
+            android:key="@string/multilist_cmd_name"
+            android:entries="@array/listCmdTitle"
+            android:entryValues="@array/listCmdValues"
+            android:defaultValue="@array/listCmdValues"
+            android:persistent="false"
+
+            />
+
+
+
+
+
+    </PreferenceCategory>
+</PreferenceScreen>

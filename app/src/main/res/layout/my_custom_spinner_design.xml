@@ -1,0 +1,16 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_below="@id/lyt_amount"
+    android:layout_alignLeft="@+id/lyt_amount"
+    android:layout_centerHorizontal="true"
+    android:paddingTop="7dp"
+    android:paddingBottom="15dp"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+
+    style="@style/ButtonEval"
+    android:textStyle="bold"
+    android:alpha="0.85"/>

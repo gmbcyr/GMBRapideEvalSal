@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Assistant Salary Calculator</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="go">Evaluate</string>
+    <string name="indication">Select your mode, enter an amount,then click the button below. Or use More... for more options.</string>
+    <string name="cat_title">Base calcul options</string>
+    <string name="cat_name">catOption</string>
+    <string name="hour_per_day_name">hour_per_day</string>
+    <string name="hour_per_day_title">Works hour per day</string>
+    <string name="hour_per_day_default">8</string>
+    <string name="day_per_week_name">day_per_week</string>
+    <string name="day_per_week_title">Days per week</string>
+    <string name="day_per_week_default">5</string>
+    <string name="menu_settings">App Settings</string>
+    <string name="app_settings">App Settings</string>
+    <string name="month_or_year_name">month_or_year</string>
+    <string name="month_or_year_title">From Year/month to day</string>
+    <string name="month_or_year_default">true</string>
+    <string name="month_or_year_summary">When reverse, it\'s from year(check) or from month(uncheck)</string>
+    <string name="year_to_day_option_name">year_to_day</string>
+    <string name="year_to_day_option_title">From Year/month/week to day</string>
+    <string name="year_to_day_option_default">1</string>
+    <string name="year_to_day_option_summary">When reverse, Choose the start point among the following items Year,Month,Week</string>
+    <string name="title_activity_connection_failure">Connection Failure</string>
+    <string name="applic_taxe_name">applic_taxe</string>
+    <string name="show_compare_mode" translatable="false">show_compare_mode</string>
+    <string name="applic_taxe_title">Add Taxes in calculation?</string>
+    <string name="applic_taxe_default" translatable="false">true</string>
+    <string name="show_compare_default" translatable="false">true</string>
+    <string name="applic_taxe_summary">If checked, the Taxes value will exclude from gross income</string>
+    <string name="show_compare_title">Show result in compare mode?</string>
+    <string name="compare_summary">If checked, the result of each single calculation will show side to side the old tax rule and the new one</string>
+    <string name="mat_status_name">mat_status</string>
+    <string name="mat_status_title">Select your status</string>
+    <string name="mat_status_default">single</string>
+    <string name="mat_status_summary">Your taxes are according to your marital status. Then choose your</string>
+    <string name="max_hour_week_name">max_hour_week</string>
+    <string name="max_hour_week_title">Max hours on regular pay</string>
+    <string name="max_hour_week_default">40</string>
+    <string name="hour_sup_rate_name">hour_sup_rate</string>
+    <string name="hour_sup_rate_title">Over Time pay rate</string>
+    <string name="hour_sup_rate_default">1.5</string>
+    <string name="hour_OT2_name">hour_OT2</string>
+    <string name="hour_OT2_title">Benefits estimate as Time hours</string>
+    <string name="hour_OT2_default">0</string>
+    <string name="rate_OT2_name">rate_OT2</string>
+    <string name="nbre_dependant" translatable="false">nbre_dependant</string>
+    <string name="rate_OT2_title">Rate of others benefits</string>
+    <string name="rate_OT2_default">0</string>
+    <string name="pay_frequency_name">pay_frequency</string>
+    <string name="pay_frequency_title">Select your pay Frequency</string>
+    <string name="pay_frequency_default">2</string>
+    <string name="pay_frequency_summary">We will show your result according to your pay frequency</string>
+    <string name="retry">Retry</string>
+    <string name="noConnection">CONNECTION FAILURE, PLEASE CHECK YOUR WIFI AND/OR DATA. THEN TRY AGAIN LATER.</string>
+    <string name="title_activity_affiche_result">Calculation Results</string>
+    <string name="inProgress">In progress....</string>
+
+    <string name="speech_prompt">Please speak your command! or say \"stop\" to cancel</string>
+    <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
+    <string name="tap_on_mic">Tap on mic to speak</string>
+
+    <string name="speech_util_name">speech_util</string>
+    <string name="speech_util_title">Use speech feature?</string>
+    <string name="speech_util_default">false</string>
+    <string name="speech_util_summary">If checked, You will be able to input value and getting result by speech.</string>
+
+
+    <string name="onback_quit">EXIT THE APPLICATION?</string>
+    <string name="onback_really_quit">Please confirm your choice</string>
+    <string name="onback_yes">YES</string>
+    <string name="onback_no">NO</string>
+
+    <string name="banner_ad_unit_id" translatable="false">@string/banner_ad_unit_id_test</string>
+    <string name="banner_ad_unit_id_real" translatable="false">ca-app-pub-1246499090499999/8578581465</string>
+    <string name="banner_ad_unit_id_test" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+
+
+    <string name="amount">Amount</string>
+    <string name="year_rate">Gross income</string>
+    <string name="day_rate">Hourly rate</string>
+    <string name="cat_list_cmd">Command available list</string>
+    <string name="cat_list_cmd_name">cat_list_cmd</string>
+
+    <string name="multilist_cmd_name">aff_list_cmd</string>
+    <string name="list_cmd_title">Command available</string>
+    <string name="list_cmd_summary">List of command you can use.</string>
+    <string name="more_options">More...</string>
+
+
+    <!--****************************************Text label for the result activity.****************************************-->
+
+    <string name="pay_summary">Pay Summary</string>
+    <string name="other_eval">New Eval</string>
+    <string name="pay_type">Pay Type : </string>
+    <string name="pay_frequency">Frequency : </string>
+
+
+    <string name="pay_rate">Pay rate : </string>
+    <string name="pay_net">Net Pay : </string>
+    <string name="pay_weekly">Weekly</string>
+    <string name="pay_two_week">Two weeks</string>
+    <string name="pay_monthly">Monthly</string>
+
+    <string name="pay_type_hour">Hourly</string>
+    <string name="pay_type_year">Salary</string>
+    <string name="general_infos">General Infos</string>
+    <string name="freq_pay">Frequency</string>
+
+
+    <string name="gros_income">Gross income</string>
+    <string name="tax_wage">Taxable Wage</string>
+    <string name="net_pay_label">Net Pay </string>
+    <string name="earning">Earnings</string>
+
+
+    <string name="hours">Hours</string>
+    <string name="regular_pay">Regular Pay</string>
+    <string name="overtime_pay">Overtime Pay</string>
+    <string name="other_benefits">Other benefits</string>
+    <string name="deductions">Deductions</string>
+
+    <string name="standard_deduction">Standard Deduction</string>
+    <string name="personal_deduction">Personnal Deduction</string>
+    <string name="other_deduction">Other deductions</string>
+    <string name="taxes">Taxes</string>
+
+
+    <string name="federal_taxe">Federal Taxes</string>
+    <string name="social_secu_taxe">Social Security Taxes</string>
+    <string name="employe_medicare">Employee Medicare</string>
+    <string name="other_taxes">Other Taxes</string>
+    <string name="call_method_from_y" translatable="false">pyth2</string>
+    <string name="call_method_from_h" translatable="false">phty2</string>
+    <string name="call_method_from_w" translatable="false">pwty2</string>
+    <string name="call_method_from_2w" translatable="false">p2wty</string>
+    <string name="call_method_from_m" translatable="false">pmty2</string>
+    <string name="no_commande_in_speech">Sorry we can\'t get a command in your speech</string>
+    <string name="commande_unknown">Sorry can\'t get command, type instead of speech</string>
+    <string name="mode">Select a mode</string>
+    <string name="private_policy">Private policy</string>
+
+    <string name="invitation_message">Hi, wanted to invite you to this App </string>
+    <string name="invitation_cta">Call to action</string>
+    <string name="invitation_title">Invitation </string>
+
+    <string name="invite_menu_label">Invite</string>
+    <string name="nbre_dependant_title">Dependents</string>
+    <string name="nbre_dependant_summary">Indicate the number of dependent (single=1,married+one child=3)</string>
+
+
+    <string-array name="freq_title">
+        <item>Hourly pay</item>
+        <item>Weekly pay</item>
+        <item>Semimonthly pay</item>
+        <item>Monthly pay</item>
+        <item>Yearly</item>
+    </string-array>
+
+
+    <string-array name="freq_values">
+        <item>@string/call_method_from_h</item>
+        <item>@string/call_method_from_w</item>
+        <item>@string/call_method_from_2w</item>
+        <item>@string/call_method_from_m</item>
+        <item>@string/call_method_from_y</item>
+    </string-array>
+
+
+    <string-array name="cmd_list_exit">
+        <item>exit</item>
+        <item>shutdown</item>
+        <item>shut down</item>
+        <item>close</item>
+        <item>exit aplication</item>
+        <item>exit app</item>
+        <item>close aplication</item>
+        <item>close app</item>
+    </string-array>
+
+
+    <string-array name="cmd_list_cancel">
+        <item>cancel</item>
+        <item>stop</item>
+        <item>cancel prompt</item>
+    </string-array>
+
+
+    <string-array name="cmd_list_evalue">
+        <item>evaluate</item>
+        <item>get results</item>
+        <item>calculation</item>
+        <item>launch</item>
+        <item>get calculation</item>
+    </string-array>
+
+
+    <string-array name="cmd_list_yearly">
+        <item>yearly</item>
+        <item>yearly rate</item>
+        <item>annuel</item>
+    </string-array>
+
+
+    <string-array name="cmd_list_hourly">
+        <item>hourly</item>
+        <item>hourly rate</item>
+        <item>hour</item>
+    </string-array>
+
+    <string-array name="cmd_list_weekly">
+        <item>weekly</item>
+        <item>weekly rate</item>
+        <item>week</item>
+    </string-array>
+
+    <string-array name="cmd_list_semiweek">
+        <item>semiweekly</item>
+        <item>semiweekly rate</item>
+        <item>semiweekly</item>
+    </string-array>
+
+    <string-array name="cmd_list_monthly">
+        <item>monthly</item>
+        <item>monthly rate</item>
+        <item>month</item>
+    </string-array>
+
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="tab_calcul">Calculation</string>
+    <string name="tab_histo">History</string>
+    <string name="tab_result">Results</string>
+    <string name="tab_saves">Saved</string>
+    <string name="save_result_lbl">Operation completed ! save result?</string>
+    <string name="save_result">SAVE</string>
+    <string name="completed">Action Completed !</string>
+    <string name="failed">Operation failed !</string>
+
+    <string name="date_pattern" translatable="false">MMMDD, yyyy</string>
+    <string name="col_impair" translatable="false">#524285F4</string>
+    <string name="col_pair" translatable="false">#0f4285F4</string>
+    <string name="tab_settings">Settings</string>
+    <string name="empty_list">Not History yet</string>
+    <string name="total_annual">Total per Year</string>
+    <string name="old_tax_rules">Old tax law</string>
+    <string name="new_tax_cut">New tax law</string>
+
+
+</resources>

@@ -1,0 +1,72 @@
+{
+  "project_info": {
+    "project_number": "218752818755",
+    "firebase_url": "https://assistant-salary-calculator.firebaseio.com",
+    "project_id": "assistant-salary-calculator",
+    "storage_bucket": "assistant-salary-calculator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "android_client_info": {
+          "package_name": "com.gmb.gmbrapidevalsal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "218752818755-q33io7f9087kuj6jm3bam3i90f54o8uh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8CQARHJFwCOXrSW1nMcaYI6Fh5HzH0AE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218752818755:android:bf388e5d38b67258",
+        "android_client_info": {
+          "package_name": "com.gmb.gmbrapideevalsal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "218752818755-q33io7f9087kuj6jm3bam3i90f54o8uh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8CQARHJFwCOXrSW1nMcaYI6Fh5HzH0AE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

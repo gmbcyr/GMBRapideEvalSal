@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.gmb.gmbrapideevalsal.ConnectionFailure">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:background="@drawable/customshape">
+
+        <TextView
+            android:id="@+id/noConnection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/noConnection"
+            android:inputType="textMultiLine"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/sepa_margin_right"
+            android:layout_marginRight="@dimen/sepa_margin_right"
+            android:layout_marginBottom="@dimen/sepa_margin_right"
+            android:textAlignment="center"
+            style="@style/section_title"/>
+
+
+        <Button
+            android:id="@+id/retry"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_c_h_n"
+            android:layout_below="@id/noConnection"
+            android:layout_alignLeft="@+id/amount"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:text="@string/retry"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            style="@style/button_new_eval"
+            android:background="@drawable/button_style"/>
+
+        </RelativeLayout>
+
+
+</RelativeLayout>

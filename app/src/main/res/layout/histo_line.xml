@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_gravity="center_horizontal|center_vertical">
+
+
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:id="@+id/lyt_content_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="2dp"
+        android:background="@color/bg_line_pair">
+
+        <LinearLayout
+            android:id="@+id/lyt_date"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/button_filter"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp">
+
+
+
+            <TextView
+                android:id="@+id/txt_date"
+                style="@style/AppTheme.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jan. 25, 2018 18:45"
+                android:textColor="@color/greyDisabled" />
+            <TextView
+                android:id="@+id/txt_time"
+                style="@style/AppTheme.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jan. 25, 2018 18:45"
+                android:textColor="@color/greyDisabled" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyt_taux"
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/button_filter"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp">
+
+
+
+            <TextView
+                android:id="@+id/txt_taux"
+                style="@style/AppTheme.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jan. 25, 2018 18:45"
+                android:textColor="@color/greyDisabled" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lyt_gros"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/button_filter"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp">
+
+
+
+            <TextView
+                android:id="@+id/txt_gros"
+                style="@style/AppTheme.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jan. 25, 2018 18:45"
+                android:textColor="@color/greyDisabled" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyt_net"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/button_filter"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp">
+
+
+
+            <TextView
+                android:id="@+id/txt_net"
+                style="@style/AppTheme.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jan. 25, 2018 18:45"
+                android:textColor="@color/greyDisabled" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyt_net_old"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/button_filter"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp">
+
+
+
+            <TextView
+                android:id="@+id/txt_net_old"
+                style="@style/AppTheme.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jan. 25, 2018 18:45"
+                android:textColor="@color/greyDisabled" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="listArray">
+        <item>From year to hour</item>
+        <item>From month to hour</item>
+        <item>From week to hour</item>
+    </string-array>
+    <string-array name="listValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="listMatStatus">
+        <item>Single Taxable Income</item>
+        <item>Married Filing Jointly</item>
+        <item>Married Filing Separately </item>
+        <item>Head of Household </item>
+    </string-array>
+    <string-array name="listMatStatusValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+
+    <string-array name="listPayFreq">
+        <item>@string/pay_weekly</item>
+        <item>@string/pay_two_week</item>
+        <item>@string/pay_monthly</item>
+    </string-array>
+    <string-array name="listPayFreqValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+
+    <string-array name="listCmdTitle">
+        <item>Cancel=Say \"stop\" or \"cancel\"</item>
+        <item>Choose Hourly Mode= Say \"Hourly rate\"</item>
+        <item>Choose Yearly mode=Say \"Yearly rate\"</item>
+        <item>Enter an amount=say an Amount. like 25</item>
+        <item>Evaluate=Say \"Evaluate\" Or \"get results\"</item>
+        <item>Exit the App=Say \"exit\" or \"close\"</item>
+    </string-array>
+    <string-array name="listCmdValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+</resources>
